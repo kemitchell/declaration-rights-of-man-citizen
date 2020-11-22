@@ -1,2 +1,7 @@
 declaration.pdf: declaration.tex
-	latexmk -c -pdf $<
+	pdflatex $<
+
+.PHONY: clean
+
+clean:
+	rm declaration.pdf
